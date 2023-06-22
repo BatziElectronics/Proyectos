@@ -1,22 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Proyectos</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title>Sensor Pir</title>
 <link rel="stylesheet" href="estilo.css">
-<link rel="icon" href="img/logo.ico">
-<meta name="author" content="Batzi 7u7">
-<meta name="keywords"  content="aparatos electricos, aparatos electronicos, leds, diodos, eléctronica, electricidad, baterías, resistencias, arduino Tecno Electric">
-<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </head>
-<header>
-<div class="cotenedor">
-</header>
 <body>
-<h1>Programación en arduino</h1>  
-<h3>Código de sensor pir mas un bombillo a 110v.</h3>
-<div class="columnas">
+<h1>Código de sensor pir mas un bombillo a 110v.</h1>
+<div class="im">
 <p>/*Codigo desarrollado por: Axel Batzibal*/</p>
 <p>/*Con modulo rele de un canal y un sensor de movimiento (Pir)*/</p>
 <p>int led1=13;          /*Identificacion de los componentes. */</p>
@@ -38,59 +31,12 @@
 <p>digitalWrite(Led1, LOW);  /*El módulo rele se apaga*/</p>
 <p>}</p> 
 <p>}</p> 
-<div>
-<img class="sensor" src="img/sensor.png">
-<h3 class="descripcion">Conexión del sensor pir al arduino.</h3>
 </div>
-<h3>Código de dos leds intermitetes</h3>
-<p>int led1=13;          /*Identificacion de los componentes. */</p>
-<p>int led2=12;         /*Identificacion de los componentes. */</p> 
-<p>void setup()</p> 
-<p>{</p> 
-<p>pinMode(led1, OUTPUT);       /*Verificacion si los componentes son de entrada o de salida*/</p> 
-<p>pinMode(led2, OUTPUT);       /*Verificacion si los componentes son de entrada o de salida*/</p> 
-<p>}</p> 
-<p>void loop()       /*Parte del loop*/</p> 
-<p>{</p> 
-<p> digitalWrite(led1, HIGH);   /*La orden para que el primer led prenda*/</p> 
-<p>delay(1000);     /*El primer led enciende por un segundo*/</p> 
-<p>digitalWrite(led1, LOW);   /*El primer led se apaga*/</p> 
-<p>delay(1000);      /*El primer led se apaga por un segundo*/</p> 
-<p>digitalWrite(led2, HIGH);    /*La orden para que el segundo led prenda*/</p> 
-<p>delay(1000);     /*El segundo led enciende por un segundo*/</p> 
-<p>digitalWrite(led2, LOW);     /*El segundo led se apaga*/</p> 
-<p>delay(1000);   /*El segundo led se apaga por un segundo*/</p> 
-<p>}</p>
-<div>
-<img class="sensor" src="img/leds.png">
-<h3 class="descripcion">Imagen de conexión de dos leds intermitentes, con dos resistencias de 1k para protección de los mismos, ya que el arduino proporciona 5v.</h3>
+<div class="sensor">
+<img src="img/sensor.png" width="300px" height="300px">
 </div>
+<div class="sensor1">
+<img class="pir" src="img/sensor.png" width="96%" height="300px">
 </div>
 </body>
-<footer>
-    <div class="grupo-1">
-    <div>
-    <figure>
-    <a href="#">
-    <img src="img/logo.png">
-    </a>
-    </figure>
-    </div>
-    <div>
-    <p class="p">Proyectos con arduino</p>
-    </div>
-    <div>
-    <h2>SIGUENOS EN NUESTRAS REDES SOCIALES</h2>
-    <div class="red-social">
-    <a href="https://www.facebook.com/Tecno-Electric-101251282612350" class="fa fa-facebook"></a>
-    <a href="#" class="fa fa-instagram"></a>
-    <a href="#" class="fa fa-youtube"></a>
-    </div>
-    </div>
-    </div>
-    <div class="grupo-2">
-    <small>&copy; 2022 <b>Tecno Electric</b> - Todos los Derechos Reservados.</small>
-    </div>
-    </footer>
-</div>
 </html>
